@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF8F2;
+  color: #0E1B17;
+}
+
+::selection {
+  background-color: #6B8F71;
+  color: #FBF8F2;
+}
+
+:focus-visible {
+  outline: 2px solid #B9873E;
+  outline-offset: 3px;
+}
+
+/* Coastline edge divider — torn/uneven line between bands, echoes a shoreline instead of a hard rectangle */
+.shore-edge {
+  position: relative;
+}
+.shore-edge::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 14px;
+  background: inherit;
+  clip-path: polygon(
+    0% 0%, 4% 60%, 9% 10%, 14% 70%, 19% 20%, 24% 65%, 29% 15%, 34% 60%,
+    39% 25%, 44% 70%, 49% 10%, 54% 65%, 59% 20%, 64% 60%, 69% 15%, 74% 70%,
+    79% 25%, 84% 60%, 89% 10%, 94% 65%, 100% 20%, 100% 100%, 0% 100%
+  );
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-scale-in {
+  animation: scaleIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}

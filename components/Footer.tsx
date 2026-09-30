@@ -23,7 +23,7 @@ export default function Footer() {
           <div>
             <p className="font-display text-lg text-paper">KelpWrap</p>
             <p className="mt-1">
-              Presented by Nathen Coelho &amp; Shubham — &ldquo;Seaweed, not
+               &ldquo;Seaweed, not
               plastic.&rdquo;
             </p>
           </div>

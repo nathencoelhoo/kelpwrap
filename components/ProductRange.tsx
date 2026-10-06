@@ -1,18 +1,23 @@
+import Image from "next/image";
+
 const products = [
   {
     index: "01",
     name: "Compostable Food Wraps",
     body: "Looks and performs like plastic film, but decomposes naturally within weeks. Unlike paper, it stays durable and moisture-resistant with oily food.",
+    image: "/wrap-box.jpg",
   },
   {
     index: "02",
     name: "Sauce & Chutney Sachets",
     body: "Single-serve pouches for sauces, chutneys and mayo — inspired by the same seaweed-membrane concept pioneered abroad, localised for Goan kitchens.",
+    image: "/sachets.jpg",
   },
   {
     index: "03",
     name: "Plastic-Free Liners",
     body: "Bags and box liners that look like plastic but are more durable and flexible than both plastic and paper, and fully home-compostable.",
+    image: "/liner-bag.jpg",
   },
 ];
 
@@ -29,16 +34,21 @@ export default function ProductRange() {
           </h2>
         </div>
 
-        <div className="grid gap-0 border-t border-ink/10 md:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-3">
           {products.map((p) => (
-            <div
-              key={p.index}
-              className="border-b border-ink/10 py-10 pr-8 md:border-b-0 md:border-r md:last:border-r-0"
-            >
-              <span className="font-display text-sm text-kelp-deep">
+            <div key={p.index} className="flex flex-col">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm border border-ink/10 bg-sand">
+                <Image
+                  src={p.image}
+                  alt={p.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <span className="mt-6 font-display text-sm text-kelp-deep">
                 {p.index}
               </span>
-              <h3 className="mt-4 font-display text-2xl font-medium text-ink">
+              <h3 className="mt-2 font-display text-2xl font-medium text-ink">
                 {p.name}
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-ink/70">

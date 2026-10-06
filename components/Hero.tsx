@@ -27,7 +27,7 @@ export default function Hero() {
             className="animate-rise text-balance font-display text-5xl font-medium leading-[1.05] text-paper md:text-7xl"
             style={{ animationDelay: "0.1s" }}
           >
-            Packaging that comes from the sea, and returns to it.
+            Packaging that comes from nature, and returns safely to it.
           </h1>
           <p
             className="animate-rise mt-7 max-w-lg text-lg leading-relaxed text-sand/90"

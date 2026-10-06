@@ -57,23 +57,18 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Signature mark — the one bold, memorable element, echoing KelpWrap's own circular wordmark */}
-      <div
-        className="animate-scale-in absolute -right-10 bottom-0 hidden h-56 w-56 translate-y-1/3 items-center justify-center rounded-full border border-kelp bg-kelp/90 text-ink shadow-2xl md:flex lg:h-64 lg:w-64"
-        style={{ animationDelay: "0.5s" }}
-      >
-        <div className="text-center leading-none">
-          <p className="font-display text-3xl font-bold italic tracking-tight lg:text-4xl">
-            Kelp
-          </p>
-          <p className="font-display text-3xl font-bold italic tracking-tight lg:text-4xl">
-            Wrap
-          </p>
-          <p className="mt-2 text-[10px] font-semibold uppercase tracking-[0.25em]">
-            Seaweed, not plastic
-          </p>
-        </div>
-      </div>
+     {/* Signature mark — real brand medallion */}
+<div
+  className="animate-scale-in absolute -right-10 bottom-0 hidden h-56 w-56 translate-y-1/3 md:block lg:h-64 lg:w-64"
+  style={{ animationDelay: "0.5s" }}
+>
+  <Image
+    src="/logo.png"
+    alt="KelpWrap medallion logo"
+    fill
+    className="object-contain drop-shadow-2xl"
+  />
+</div>
     </section>
   );
 }

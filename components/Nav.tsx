@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Nav() {
   const links = [
     { href: "#why", label: "Why Seaweed" },
@@ -11,9 +12,9 @@ export default function Nav() {
     <header className="absolute top-0 left-0 right-0 z-30">
       <nav className="mx-auto flex max-w-content items-center justify-between px-6 py-6 md:px-10">
         <a href="#top" className="flex items-center gap-3">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-sand/70 text-[10px] font-semibold tracking-tight text-sand">
-            KW
-          </span>
+          <span className="relative h-9 w-9 shrink-0">
+  <Image src="/logo.png" alt="KelpWrap" fill className="object-contain" />
+</span>
           <span className="font-display text-lg font-semibold text-sand">
             KelpWrap
           </span>

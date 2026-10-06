@@ -50,7 +50,7 @@ export default function UseCases() {
 
           <div className="relative h-[420px] w-full overflow-hidden rounded-sm lg:h-full">
             <Image
-              src="https://images.unsplash.com/photo-1575833948662-cc99178abbb8?auto=format&fit=crop&w=1600&q=80"
+              src="/wrap-box.jpg"
               alt="Compostable kraft-style takeaway box, the format KelpWrap materials are cut and packed for"
               fill
               className="object-cover"

@@ -1,43 +1,27 @@
 # KelpWrap — Ocean Grown Packaging
 
-A Next.js 14 (App Router) + TypeScript + Tailwind CSS site for KelpWrap,
-built from the pitch deck content, ready to deploy on Vercel.
+Marketing site for KelpWrap, a Goa-based startup making seaweed-based,
+home-compostable food packaging for cafés, resorts and hotels.
 
-## Run locally
+**Live site:** https://kelpwrap.vercel.app
 
-```bash
-npm install
-npm run dev
-```
+Built with Next.js 14 (App Router), TypeScript, and Tailwind CSS. Deployed
+on Vercel, auto-redeploying on every push to `main`.
 
-Then open http://localhost:3000
+## What's on the site
 
-## Deploy to Vercel
+- **Hero** — headline, intro, and the KelpWrap medallion logo
+- **Why Seaweed** — compostability, moisture resistance, fast carbon
+  absorption, local sourcing
+- **Use Cases** — street food, sauces & chutneys, bakery, takeaway liners
+- **Product Range** — Compostable Food Wraps, Sauce & Chutney Sachets,
+  Plastic-Free Liners, each with real product photography
+- **How It's Made** — the 4-step manufacturing process
+- **Target Market** — B2B model, initial launch locations, working
+  capital cycle
+- **Plastic Footprint Calculator** — interactive tool estimating plastic
+  avoided per month/year, with café/restaurant/resort presets
+- **Vision & SDG alignment**
+- **Footer** — contact CTA
 
-**Option A — GitHub (recommended)**
-1. Push this folder to a new GitHub repo.
-2. Go to vercel.com → "Add New Project" → import the repo.
-3. Framework preset "Next.js" is auto-detected. Click Deploy.
-
-**Option B — Vercel CLI**
-```bash
-npm i -g vercel
-vercel
-```
-
-## What's included
-
-- `app/` — root layout (fonts, metadata) and the homepage
-- `components/` — Hero, Why Seaweed, Use Cases, Product Range, How It's
-  Made, Target Market, the interactive **Plastic Footprint Calculator**,
-  Impact/SDG section, and Footer
-- Design tokens (colors, fonts) live in `tailwind.config.ts`
-- Hero and section imagery is hotlinked from Unsplash (free license);
-  swap the URLs in `Hero.tsx`, `UseCases.tsx`, and `TargetMarket.tsx` for
-  your own product photography whenever you have it.
-
-## Next steps worth doing before launch
-
-- Swap in real product photography (the deck mentions you have some).
-- Replace `hello@kelpwrap.in` in `Footer.tsx` with a real contact address.
-- Add a real domain in Vercel's project settings once you have one.
+## Project structure
